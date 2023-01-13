@@ -261,7 +261,70 @@ font-weight: 400;
     align-items: center;
 }
 
+/*------- Media Query ---------*/
+/*Mobile Devices  */
 
+@media screen and (max-width:688px) {
+
+    .header {
+         justify-content: center;   
+    }
+    .first-container{
+        width: 100%;
+    
+    }
+    .players-info {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .blog {
+        align-items: center;
+    }
+    .blog-section {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .top {
+        align-items: center;
+  
+    }
+    .course-main {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Tablet Devices  */
+
+@media screen and (min-width:689px) and (max-width:992px) {
+    .first-container{
+        width: 100%;
+        background-color: yellowgreen;
+    }
+    .players-info {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .course-main {
+        align-items: center;
+         justify-content: flex-start;
+        flex-direction: column;
+    }
+    .blog-section {
+      grid-template-columns: repeat(1,1fr);
+    
+    }
+
+    .section-title {
+        text-align: center;
+    }
+    .top {
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+}
 
 
     
